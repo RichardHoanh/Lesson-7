@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currencytransfer</title>
+    <style>
+        td {
+            width: 150px
+        }
+
+        th {
+            width: 150px
+        }
+    </style>
+</head>
+<body>
+<table>
+
+<!--    <tr align="center">-->
+<!--        <th> <label for="Amount">Amount</label></th>-->
+<!--        <th>From Currency</th>-->
+<!--        <th>To Currency</th>-->
+<!--    </tr>-->
+<!--    <tr align="center">-->
+<!--        <td><input type="text" id="Amount"></td>-->
+<!--        <td >-->
+<!--            <select id="From">-->
+<!--                <option value="VND">VND</option>-->
+<!--                <option value="USD">USD</option>-->
+<!--            </select>-->
+<!--        </td>-->
+<!--        <td >-->
+<!--            <select id="To">-->
+<!--                <option value="VND">VND</option>-->
+<!--                <option value="USD">USD</option>-->
+<!--            </select>-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <button onclick="ChangeMoney()">Convert</button>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<p id="Result"></p>-->
+<!--</body>-->
+
+
+
+    <tr align="center">
+        <th> <label for="Amount">Amount</label></th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr align="center">
+        <td><input type="text" id="Amount"></td>
+        <td >
+            <select id="From">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+            </select>
+        </td>
+        <td >
+            <select id="To">
+                <option value="1">VND</option>
+                <option value="23000">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="ChangeMoney()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="Result"></p>
+</body>
+<script>
+    function ChangeMoney(){
+        var amount =+document.getElementById("Amount").value;
+        var from=+document.getElementById("From").value;
+        var to=+document.getElementById("To").value;
+        var result=amount*(from/to);
+        document.getElementById("Result").innerHTML="Kết quả là : "+result;
+    }
+</script>
+
+
+
+</html>
+<!--<script src="Chuyendoitiente.js"></script>-->

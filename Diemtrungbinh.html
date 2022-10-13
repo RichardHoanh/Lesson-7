@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Everage Point</title>
+
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Physics</td>
+        <td>Chemistry</td>
+        <td>Biological</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Vatly"></td>
+        <td><input type="text" id="Hoahoc"></td>
+        <td><input type="text" id="Sinhhoc"></td>
+    </tr>
+</table>
+<br>
+<button onclick="TBC()">Click</button>
+<br>
+<p id="Diemtrungbinh"></p>
+
+</body>
+<script>
+    function TBC() {
+        var a = document.getElementById("Vatly").value;
+        var b = document.getElementById("Hoahoc").value;
+        var c = document.getElementById("Sinhhoc").value;
+        var TB = (a * b * c) / 3;
+        document.getElementById("Diemtrungbinh").innerHTML="Điểm trung bình là: " + TB;
+    }
+</script>
+</html>

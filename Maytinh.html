@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CALCULATOR</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<input placeholder="Nhap so thu nhat" style="width:150px;height: 30px" type="text" id="a">
+<input placeholder="Nhap so thu hai" style="width:150px;height: 30px" type="text" id="b"> <br> <br>
+<button onclick="Cong()">+</button>
+<button onclick="Tru()">-</button>
+<button onclick="Nhan()">*</button>
+<button onclick="Chia()">/</button>
+<div id="Ket qua"></div>
+</body>
+<script>
+    function Cong() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        a = +a;
+        b = +b;
+        var Tong = a + b;
+        document.getElementById("Ket qua").innerText="Ket qua = " + Tong;
+
+    }
+
+    function Tru() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        a = +a;
+        b = +b;
+        var Tru = a - b;
+        document.getElementById("Ket qua").innerText="Ket qua = " + Tru;
+    }
+
+    function Nhan() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        a = +a;
+        b = +b;
+        var Nhan = a * b;
+        document.getElementById("Ket qua").innerText="Ket qua = " + Nhan;
+    }
+
+    function Chia() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        a = +a;
+        b = +b;
+        var Chia = a / b;
+        document.getElementById("Ket qua").innerText="Ket qua = " + Chia;
+    }
+
+</script>
+
+
+</html>
